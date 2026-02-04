@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:80"
+    environment:
+      - AMADEUS_CLIENT_ID=${AMADEUS_CLIENT_ID}
+      - AMADEUS_CLIENT_SECRET=${AMADEUS_CLIENT_SECRET}
